@@ -27,18 +27,18 @@ public class Qarto_V2 {
     public static void Websetup() throws Exception {
         //MyScreenRecorder.startRecording("");
         //MyScreenRecorder.stopRecording();
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Fahim\\Desktop\\Selenium_Java\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "G:\\Selenium_Java\\geckodriver.exe");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get(BaseURL);
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         //Assert.assertTrue(driver.getTitle().contains("Quarto | Home"));
         js = (JavascriptExecutor) driver;
 
     }
 
-    //@Test(priority = 1)
+    @Test(priority = 1)
     public static void Qarto_Website() throws Exception {
 
         //Quarto_Cookies
@@ -52,7 +52,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-   //@Test(priority = 2)
+   @Test(priority = 2)
     public static void Request_Demo() throws Exception {
         //Request_Demo
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/app-website[1]/app-homepage[1]/hero-banner-v4[1]/section[1]/div[1]/div[1]/div[1]/owl-carousel[1]/owl-carousel-child[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/a[1]")).click();
@@ -624,7 +624,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    @Test(priority = 11)
+    //@Test(priority = 11)
     public static void Create_News() throws InterruptedException, AWTException {
         //Create_News
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
