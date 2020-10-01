@@ -32,7 +32,7 @@ public class Qarto_V2 {
         driver.manage().window().maximize();
         driver.get(BaseURL);
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         //Assert.assertTrue(driver.getTitle().contains("Quarto | Home"));
         js = (JavascriptExecutor) driver;
 
@@ -42,7 +42,7 @@ public class Qarto_V2 {
     public static void Qarto_Website() throws Exception {
 
         //Quarto_Cookies
-        driver.findElement(By.xpath("//*[@id=\"consent\"]/div/p/div/button")).click();
+        driver.findElement(By.xpath("//button[contains(text(),'Accept')]")).click();
         Thread.sleep(15000);
         //View_Features
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/app-website[1]/app-homepage[1]/hero-banner-v4[1]/section[1]/div[1]/div[1]/div[1]/owl-carousel[1]/owl-carousel-child[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/a[2]")).click();
@@ -103,7 +103,7 @@ public class Qarto_V2 {
         //pass
         driver.findElement(By.cssSelector("#password")).click();
         Thread.sleep(2000);
-        driver.findElement(By.cssSelector("#password")).sendKeys("Admin2020@");
+        driver.findElement(By.cssSelector("#password")).sendKeys("Admin2020#");
         driver.findElement(By.xpath("/html/body/root/login/div/div/div/div[2]/div/div/div/form/div/div[3]/div/button")).click();
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         //Assert.assertTrue(driver.getPageSource().contains("Explore Categories"));
@@ -1892,9 +1892,9 @@ public class Qarto_V2 {
     @Test(priority = 60)
     public static void Log_out() throws InterruptedException, AWTException {
         //LogOut
-        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[7]/a[1]/img[1]")).click();
+        driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[9]/a[1]/img[1]")).click();
         Thread.sleep(2000);
-        driver.findElement((By.xpath("//a[contains(text(),'Log Out')]"))).click();
+        driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[9]/ul[1]/li[7]/a[1]"))).click();
         Thread.sleep(5000);
     }
 
