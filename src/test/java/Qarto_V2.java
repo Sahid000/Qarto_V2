@@ -41,7 +41,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 0)
+    @Test(priority = 0)
     public static void Qarto_Website() throws Exception {
 
 //        //Quarto_Cookies
@@ -55,7 +55,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 1)
+    @Test(priority = 1)
     public static void Request_Demo() throws Exception {
         //Request_Demo
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/app-website[1]/app-homepage[1]/hero-banner-v4[1]/section[1]/div[1]/div[1]/div[1]/owl-carousel[1]/owl-carousel-child[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/a[1]")).click();
@@ -117,7 +117,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 3)
+    @Test(priority = 3)
     public static void Sidebar_Menu () throws InterruptedException {
         //Sidebar_Menu
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/quarto-sidebar[1]/div[1]/div[1]/a[1]/i[1]")).click();
@@ -176,11 +176,11 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 4)
+    @Test(priority = 4)
     public static void GiveKudos() throws InterruptedException {
         //GiveKudos
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[1]/a[1]")).click();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         //User_Name
         driver.findElement(By.xpath("//input[@id='user']")).click();
         driver.findElement(By.xpath("//input[@id='user']")).sendKeys("Shahid");
@@ -213,7 +213,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 5)
+    @Test(priority = 5)
     public static void Global_Search() throws InterruptedException, AWTException {
         //Global_Search
         driver.findElement(By.xpath("//div[@class='input-group']//input[@placeholder='Search']")).click();
@@ -223,13 +223,11 @@ public class Qarto_V2 {
         driver.findElement(By.xpath("//a[contains(text(),'What are some tips on how to be more focused?')]")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-search-list[1]/section[1]/div[2]/div[2]/list-card[1]/div[1]/a[1]/div[1]/div[2]/p[1]")).click();
-        Thread.sleep(3000);
-        //Explore_Categories
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/quarto-sidebar[1]/div[1]/div[2]/ul[1]/li[2]/a[1]/i[1]")).click();
         Thread.sleep(5000);
+
     }
 
-    //@Test(priority = 6)
+    @Test(priority = 6)
     public static void SHARE_LINK() throws InterruptedException, AWTException {
         //Share_Page
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[3]/a[1]/i[1]")).click();
@@ -257,7 +255,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 7)
+    @Test(priority = 7)
     public static void Simple_Document() throws InterruptedException {
         //Create_Simple_Document_QUIZ
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
@@ -278,7 +276,7 @@ public class Qarto_V2 {
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]")).sendKeys("What golden advice did you learn in your life?\n" +
                 "Don’t chew what you can’t swallow. It ain’t worth it.\n" +
                 "Don’t believe everything you hear. Sometimes ears hear what you’re not supposed to hear.\n");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         //ADD_CATEGORIES
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/a[1]")).click();
         Thread.sleep(2000);
@@ -297,24 +295,27 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    @Test(priority = 8)
+    //@Test(priority = 8)
     public static void Simple_Document_with_QUIZ() throws InterruptedException {
         //Create_Simple_Document_QUIZ
-        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
+        driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
         Thread.sleep(2000);
-        driver.findElement((By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[4]/ul[1]/li[1]/a[1]"))).click();
+        driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/ul[1]/li[1]/a[1]")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-select-document[1]/div[2]/form[1]/div[1]/label[1]/img[1]")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[@class='btn btn-md btn-secondary']")).click();
+        //Select_Document_Type
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-select-document[1]/div[2]/form[1]/div[1]/label[1]/img[1]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(5000);
+        //CREATE
+        driver.findElement(By.xpath("//button[@class='btn btn-md btn-secondary']")).click();
+        Thread.sleep(2000);
         //Document_Title
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[1]/div[1]/input[1]")).click();
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys("Test a Simple Document_With_QUIZ");
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         //Document_Body
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]")).click();
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]")).sendKeys("Can you create a habit of improving yourself every day and becoming better the next day?\n" +
+        driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).click();
+        driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).sendKeys("Can you create a habit of improving yourself every day and becoming better the next day?\n" +
                 "This is the whole purpose of good habits, isn’t it? “Habit of improving yourself” is a gibberish. You create a few or several habits that help you to improve in specific areas. Then, synergy kicks in and you are becoming better.\n" +
                 "\n" +
                 "This is the nature of habits. They shape your character. They make you who you are. Start some improvement habits and you will improve yourself.\n" +
@@ -322,28 +323,54 @@ public class Qarto_V2 {
                 "\n" +
                 "It blows my mind when I think about it. For 16 years I was neglecting any self-analysis, any serious thoughts about the future. I abandoned any hope of creating my life consciously..\n");
         Thread.sleep(5000);
+//        //ADD_QUIZ
+//         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/button[1]")).click();
+//        Thread.sleep(2000);
+//        //Quiz_Questions
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[1]/input[1]")).click();
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[1]/input[1]")).sendKeys("QUIZ QUESTIONS 1");
+//        Thread.sleep(2000);
+//        //Answer1
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).click();
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.1");
+//        Thread.sleep(2000);
+//        //Answer2
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).click();
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.2");
+//        Thread.sleep(2000);
+//        //ADD_ANOTHER_ANSWER
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/button[1]")).click();
+//        Thread.sleep(2000);
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/input[1]")).click();
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.3");
+//        Thread.sleep(2000);
+//        //Answers
+//        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[1]/span[1]")).click();
+//        Thread.sleep(2000);
         //ADD_QUIZ
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/button[1]")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[1]/input[1]")).click();
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[1]/input[1]")).sendKeys("QUIZ QUESTIONS 1");
+        //Quiz_Questions
+        driver.findElement(By.xpath("//input[@placeholder='Enter question here']")).click();
+        driver.findElement(By.xpath("//input[@placeholder='Enter question here']")).sendKeys("QUIZ QUESTIONS 1");
         Thread.sleep(2000);
         //Answer1
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).click();
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.1");
+        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).click();
+        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.1");
         Thread.sleep(2000);
         //Answer2
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).click();
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.2");
+        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).click();
+        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.2");
         Thread.sleep(2000);
         //ADD_ANOTHER_ANSWER
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/button[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"0\"]/div/div[2]/div/div[3]/button")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/input[1]")).click();
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.3");
+        //Answer3
+        driver.findElement(By.xpath("//*[@id=\"0\"]/div/div[2]/div/div[3]/div/div[2]/input")).click();
+        driver.findElement(By.xpath("//*[@id=\"0\"]/div/div[2]/div/div[3]/div/div[2]/input")).sendKeys("QUESTIONS 1.3");
         Thread.sleep(2000);
         //Answers
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[1]/span[1]")).click();
+        driver.findElement(By.xpath("//div[@class='ng-star-inserted ng-dirty ng-touched ng-valid']//div[2]//div[1]//div[1]//label[1]//span[1]")).click();
         Thread.sleep(2000);
         //Save_Quiz
         driver.findElement(By.xpath("//button[contains(text(),'Save Quiz')]")).click();
@@ -366,85 +393,90 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 5)
-    public static void Create_Multi_Document_QUIZ() throws InterruptedException {
+    @Test(priority = 9)
+    public static void Multi_Sectional_Document() throws InterruptedException {
         //Create_Multi_Document_QUIZ
-        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[3]/a[1]/i[1]")).click();
+        driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//a[contains(text(),'Create Document')]")).click();
+        driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/ul[1]/li[1]/a[1]")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-select-document[1]/div[2]/form[1]/div[2]/label[1]/img[1]")).click();
+        //Select_Document_Type
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-select-document[1]/div[2]/form[1]/div[2]/label[1]/img[1]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[@class='btn btn-md btn-secondary']")).click();
+        //CREATE
+        driver.findElement(By.xpath("//button[contains(text(),'CREATE')]")).click();
         Thread.sleep(2000);
         //Document_Title
         driver.findElement(By.xpath("//input[@id='docTitle']")).click();
-        driver.findElement(By.xpath("//input[@id='docTitle']")).sendKeys("Create Multi-Sectional Document_QUIZ");
+        driver.findElement(By.xpath("//input[@id='docTitle']")).sendKeys("Multi-Sectional Document");
         Thread.sleep(2000);
-        //Add_Section
-        driver.findElement(By.xpath("//input[@placeholder='Add Section']")).click();
-        driver.findElement(By.xpath("//input[@placeholder='Add Section']")).sendKeys("A");
-        Thread.sleep(1000);
+        //Add_Section_1
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[2]/div[2]/div[3]/input[1]")).click();
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[2]/div[2]/div[3]/input[1]")).sendKeys("A");
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[contains(text(),'ADD')]")).click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         //Document_Body
         driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).click();
         driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).sendKeys("One of the most productive emotions in the world is exciting. Ask yourself…When are you most energized, focused, and capable of achieving difficult tasks?");
+        Thread.sleep(5000);
+        //Add_Section_2
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[2]/div[2]/div[3]/input[1]")).click();
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[2]/div[2]/div[3]/input[1]")).sendKeys("B");
         Thread.sleep(2000);
-        //Add_Section
-        driver.findElement(By.xpath("//input[@placeholder='Add Section']")).click();
-        driver.findElement(By.xpath("//input[@placeholder='Add Section']")).sendKeys("B");
-        Thread.sleep(1000);
         driver.findElement(By.xpath("//button[contains(text(),'ADD')]")).click();
-        Thread.sleep(1000);
-        //Document_Body
+        Thread.sleep(3000);
+       //Document_Body
         driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).click();
         driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).sendKeys("When you’re the most excited about doing them. So before you sit down to work, ask yourself, “What can I get excited about with the task I’m about to complete?”");
-        Thread.sleep(2000);
-        //Add_Categories
-        driver.findElement(By.xpath("/html/body/root/dashboard-layout/div/perfect-scrollbar/div/div[1]/div/div/div/create-stepwise/section/form/div/div[2]/div[1]/div[2]/a")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//li[8]//div[1]//div[1]//label[1]//span[1]")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[@class='btn btn-secondary']")).click();
-        Thread.sleep(2000);
-        //ADD_QUIZ
-        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/button[1]")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter question here']")).click();
-        driver.findElement(By.xpath("//input[@placeholder='Enter question here']")).sendKeys("QUIZ QUESTIONS 1");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).click();
-        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.1");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).click();
-        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.2");
-        Thread.sleep(2000);
-        //ADD_ANOTHER_ANSWER
-        driver.findElement(By.xpath("//*[@id=\"0\"]/div/div[2]/div/div[3]/button")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//div[3]//div[1]//div[2]//input[1]")).click();
-        driver.findElement(By.xpath("//div[3]//div[1]//div[2]//input[1]")).sendKeys("QUESTIONS 1.3");
-        Thread.sleep(2000);
-        //Answers
-        driver.findElement(By.xpath("//*[@id=\"0\"]/div/div[2]/div/div[2]/div/div[1]/label/span")).click();
-        Thread.sleep(2000);
-        //Save_Quiz
-        driver.findElement(By.xpath("//button[@class='btn btn-secondary']")).click();
-        Thread.sleep(2000);
-        //Publish_Document
-        driver.findElement(By.xpath("/html/body/root/dashboard-layout/div/perfect-scrollbar/div/div[1]/div/div/div/create-stepwise/section/div/div/button[4]")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[@class='btn btn-secondary']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[@class='btn btn-secondary']")).click();
-        Thread.sleep(3000);
-        //Explore_Categories
-        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/quarto-sidebar[1]/div[1]/div[2]/ul[1]/li[1]/a[1]/i[1]")).click();
         Thread.sleep(5000);
+        //ADD_Categories
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/a[1]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        Thread.sleep(5000);
+        //Select_Categories
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[4]/div[1]/div[1]/label[1]/span[1]")).click();
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//button[contains(text(),'Done')]")).click();
+        Thread.sleep(3000);
+        //Publish_Document
+        driver.findElement(By.xpath("//button[contains(text(),'Publish Document')]")).click();
+        Thread.sleep(3000);
+        //Please_Confirm
+        driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+        Thread.sleep(2000);
+        //Back_To_Home
+        driver.findElement(By.xpath("//button[contains(text(),'BACK TO HOME')]")).click();
+        Thread.sleep(5000);
+//        //ADD_QUIZ
+//        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/button[1]")).click();
+//        Thread.sleep(2000);
+//        driver.findElement(By.xpath("//input[@placeholder='Enter question here']")).click();
+//        driver.findElement(By.xpath("//input[@placeholder='Enter question here']")).sendKeys("QUIZ QUESTIONS 1");
+//        Thread.sleep(2000);
+//        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).click();
+//        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.1");
+//        Thread.sleep(2000);
+//        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).click();
+//        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/quiz-create[1]/div[2]/div[1]/div[1]/form[1]/ngb-accordion[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]")).sendKeys("QUESTIONS 1.2");
+//        Thread.sleep(2000);
+//        //ADD_ANOTHER_ANSWER
+//        driver.findElement(By.xpath("//*[@id=\"0\"]/div/div[2]/div/div[3]/button")).click();
+//        Thread.sleep(2000);
+//        driver.findElement(By.xpath("//div[3]//div[1]//div[2]//input[1]")).click();
+//        driver.findElement(By.xpath("//div[3]//div[1]//div[2]//input[1]")).sendKeys("QUESTIONS 1.3");
+//        Thread.sleep(2000);
+//        //Answers
+//        driver.findElement(By.xpath("//*[@id=\"0\"]/div/div[2]/div/div[2]/div/div[1]/label/span")).click();
+//        Thread.sleep(2000);
+//        //Save_Quiz
+//        driver.findElement(By.xpath("//button[@class='btn btn-secondary']")).click();
+//        Thread.sleep(2000);
+
     }
 
-    //@Test(priority = 6)
+    //@Test(priority = 10)
     public static void Create_Visual_Document_QUIZ() throws InterruptedException, AWTException {
         //Create_Visual_Document
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[3]/a[1]/i[1]")).click();
@@ -520,7 +552,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 7)
+    //@Test(priority = 11)
     public static void Create_Video_Document_QUIZ() throws InterruptedException, AWTException {
         //Create_Video_Document_QUIZ
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[3]/a[1]/i[1]")).click();
@@ -594,7 +626,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 8)
+    //@Test(priority = 12)
     public static void Create_or_Upload_Video_QUIZ() throws InterruptedException, AWTException {
         //Create_or_Upload_Video
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[3]/a[1]/i[1]")).click();
@@ -665,7 +697,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 9)
+    //@Test(priority = 13)
     public static void ASSIGN_TO_CREATE() throws InterruptedException, AWTException {
         //ASSIGN_TO_CREATE
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[3]/a[1]/i[1]")).click();
@@ -706,7 +738,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 10)
+    //@Test(priority = 14)
     public static void Create_Event() throws InterruptedException, AWTException {
         //Create_Event
         driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
