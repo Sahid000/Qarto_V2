@@ -449,6 +449,65 @@ public class Qarto_V2 {
         //Back_To_Home
         driver.findElement(By.xpath("//button[contains(text(),'BACK TO HOME')]")).click();
         Thread.sleep(5000);
+
+    }
+
+    //@Test(priority = 10)
+    public static void Multi_Sectional_Document_QUIZ() throws InterruptedException {
+        //Create_Multi_Document_QUIZ
+        driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/ul[1]/li[1]/a[1]")).click();
+        Thread.sleep(2000);
+        //Select_Document_Type
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-select-document[1]/div[2]/form[1]/div[2]/label[1]/img[1]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        Thread.sleep(2000);
+        //CREATE
+        driver.findElement(By.xpath("//button[contains(text(),'CREATE')]")).click();
+        Thread.sleep(2000);
+        //Document_Title
+        driver.findElement(By.xpath("//input[@id='docTitle']")).click();
+        driver.findElement(By.xpath("//input[@id='docTitle']")).sendKeys("Multi-Sectional Document");
+        Thread.sleep(2000);
+        //Add_Section_1
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[2]/div[2]/div[3]/input[1]")).click();
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[2]/div[2]/div[3]/input[1]")).sendKeys("A");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[contains(text(),'ADD')]")).click();
+        Thread.sleep(3000);
+        //Document_Body
+        driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).click();
+        driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).sendKeys("One of the most productive emotions in the world is exciting. Ask yourself…When are you most energized, focused, and capable of achieving difficult tasks?");
+        Thread.sleep(5000);
+        //Add_Section_2
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[2]/div[2]/div[3]/input[1]")).click();
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[2]/div[2]/div[3]/input[1]")).sendKeys("B");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[contains(text(),'ADD')]")).click();
+        Thread.sleep(3000);
+        //Document_Body
+        driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).click();
+        driver.findElement(By.xpath("//div[@class='fr-element fr-view']")).sendKeys("When you’re the most excited about doing them. So before you sit down to work, ask yourself, “What can I get excited about with the task I’m about to complete?”");
+        Thread.sleep(5000);
+        //ADD_Categories
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/a[1]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        Thread.sleep(5000);
+        //Select_Categories
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[4]/div[1]/div[1]/label[1]/span[1]")).click();
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//button[contains(text(),'Done')]")).click();
+        Thread.sleep(3000);
+        //Publish_Document
+        driver.findElement(By.xpath("//button[contains(text(),'Publish Document')]")).click();
+        Thread.sleep(3000);
+        //Please_Confirm
+        driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+        Thread.sleep(2000);
+        //Back_To_Home
+        driver.findElement(By.xpath("//button[contains(text(),'BACK TO HOME')]")).click();
+        Thread.sleep(5000);
 //        //ADD_QUIZ
 //        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/create-stepwise[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/button[1]")).click();
 //        Thread.sleep(2000);
