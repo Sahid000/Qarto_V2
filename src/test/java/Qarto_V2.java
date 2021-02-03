@@ -340,7 +340,7 @@ public class Qarto_V2 {
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/a[1]")).click();
         Thread.sleep(2000);
         //Select_Categories
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[contains(text(),'Done')]")).click();
         Thread.sleep(2000);
@@ -417,7 +417,7 @@ public class Qarto_V2 {
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-fresh[1]/section[1]/form[1]/div[1]/div[2]/div[1]/div[2]/a[1]")).click();
         Thread.sleep(2000);
         //Select_Categories
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[contains(text(),'Done')]")).click();
         Thread.sleep(2000);
@@ -475,8 +475,8 @@ public class Qarto_V2 {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(5000);
         //Select_Categories
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
-        Thread.sleep(5000);
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[contains(text(),'Done')]")).click();
         Thread.sleep(3000);
         //Publish_Document
@@ -561,8 +561,8 @@ public class Qarto_V2 {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(5000);
         //Select_Categories
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
-        Thread.sleep(5000);
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[contains(text(),'Done')]")).click();
         Thread.sleep(3000);
         //Publish_Document
@@ -619,8 +619,8 @@ public class Qarto_V2 {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(5000);
         //Select_Categories
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
-        Thread.sleep(5000);
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[contains(text(),'Done')]")).click();
         Thread.sleep(3000);
         //Publish_Document
@@ -703,8 +703,8 @@ public class Qarto_V2 {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(5000);
         //Select_Categories
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
-        Thread.sleep(5000);
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[contains(text(),'Done')]")).click();
         Thread.sleep(3000);
         //Publish_Document
@@ -758,7 +758,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
         //Select_Categories
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         //Save
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/div[1]/div[1]/div[1]/div[1]/button[2]")).click();
         Thread.sleep(5000);
@@ -805,7 +805,7 @@ public class Qarto_V2 {
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]")).sendKeys("When we like someone, powerful forces within us begin to drive our behavior.");
         Thread.sleep(5000);
         //ADD_QUIZ
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/div[1]/div[1]/div[1]/div[1]/button[1]")).click();
         Thread.sleep(2000);
         //Quiz_Questions
         driver.findElement(By.xpath("//input[@placeholder='Enter question here']")).click();
@@ -833,7 +833,7 @@ public class Qarto_V2 {
         driver.findElement(By.xpath("//button[contains(text(),'Save Quiz')]")).click();
         Thread.sleep(2000);
         //ADD_Categories
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[4]/div[1]/div[1]/label[1]/span[1]")).click();
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[2]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
         Thread.sleep(5000);
         //Save
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/div[1]/div[1]/div[1]/div[1]/button[2]")).click();
@@ -960,8 +960,8 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 23)
-    public static void Insert_YouTube_Video_Link() throws InterruptedException, AWTException {
+    //@Test(priority = 22)
+    public static void Insert_YouTube_Video() throws InterruptedException, AWTException {
         //Create_or_Upload_Video
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
         Thread.sleep(2000);
@@ -995,8 +995,8 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 22)
-    public static void Insert_YouTube_Video_Link_QUIZ() throws InterruptedException, AWTException {
+    //@Test(priority = 23)
+    public static void Insert_YouTube_Video_QUIZ() throws InterruptedException, AWTException {
         //Create_or_Upload_Video
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
         Thread.sleep(2000);
@@ -1005,13 +1005,14 @@ public class Qarto_V2 {
         Thread.sleep(2000);
         //Video_Title
         driver.findElement(By.xpath("//input[@id='title']")).click();
-        driver.findElement(By.xpath("//input[@id='title']")).sendKeys("Residential Construction - Start to Finish!");
+        driver.findElement(By.xpath("//input[@id='title']")).sendKeys("Time lapse of home constructed start to finish");
         Thread.sleep(5000);
+        //Youtube_Video
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/label[1]")).click();
         Thread.sleep(2000);
         //Upload Video
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[1]/div[4]/div[2]/input[1]")).click();
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[1]/div[4]/div[2]/input[1]")).sendKeys("https://www.youtube.com/watch?v=FbYrGaoWIec&t=3s");
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-video[1]/create-video-upload-component[1]/form[1]/div[1]/div[1]/div[4]/div[2]/input[1]")).sendKeys("https://www.youtube.com/watch?v=C3iI6S7TuCA&t=15s");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(10000);
         //Notes
@@ -1057,23 +1058,17 @@ public class Qarto_V2 {
         Thread.sleep(5000);
 
     }
-    
 
-
-
-
-//    -----------------------------------------------------
-
-    //@Test(priority = 19)
+    @Test(priority = 24)
     public static void ASSIGN_TO_CREATE() throws InterruptedException, AWTException {
         //ASSIGN_TO_CREATE
-        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/quarto-header[1]/header[1]/nav[1]/div[2]/ul[1]/li[3]/a[1]/i[1]")).click();
+        driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//a[contains(text(),'Assign To Create')]")).click();
+        driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/ul[1]/li[3]/a[1]")).click();
         Thread.sleep(2000);
         //Subject
         driver.findElement(By.xpath("//input[@placeholder='Please add a subject']")).click();
-        driver.findElement(By.xpath("//input[@placeholder='Please add a subject']")).sendKeys("Subject Assign To Create");
+        driver.findElement(By.xpath("//input[@placeholder='Please add a subject']")).sendKeys("Test Automation Assign To Create");
         Thread.sleep(2000);
         //User
         driver.findElement(By.xpath("//input[@id='user']")).click();
@@ -1088,22 +1083,28 @@ public class Qarto_V2 {
         //Due Date
         driver.findElement(By.xpath("//i[@class='icon-due-date icon-large text-success align-middle']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//div[contains(text(),'31')]")).click();
+        driver.findElement(By.xpath("//div[contains(text(),'28')]")).click();
         Thread.sleep(2000);
         //Add_Categories
-        driver.findElement(By.xpath("//div[@class='btn btn-light btn-with-icon']")).click();
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/document-write[1]/div[2]/div[1]/div[1]/form[1]/div[4]/div[2]/div[1]")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[2]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[8]/div[1]/div[1]/label[1]/span[1]")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[2]/div[1]/div[1]/div[2]/div[3]/button[1]")).click();
+        //Select_Categories
+        driver.findElement(By.xpath("//body/ngb-modal-window[2]/div[1]/div[1]/div[2]/div[1]/div[1]/categorylist[1]/ul[1]/li[7]/div[1]/div[1]/label[1]/span[1]")).click();
         Thread.sleep(2000);
         //Done
-        driver.findElement(By.xpath("/html[1]/body[1]/ngb-modal-window[1]/div[1]/div[1]/document-write[1]/div[2]/div[1]/div[1]/form[1]/button[1]")).click();
-        Thread.sleep(5000);
-        //Explore_Categories
-        driver.findElement(By.xpath("/html[1]/body[1]/root[1]/dashboard-layout[1]/div[1]/quarto-sidebar[1]/div[1]/div[2]/ul[1]/li[1]/a[1]/i[1]")).click();
-        Thread.sleep(5000);
+        driver.findElement(By.xpath("//body/ngb-modal-window[2]/div[1]/div[1]/div[2]/div[3]/button[1]")).click();
+        Thread.sleep(3000);
+        //Assign_Done
+        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/document-write[1]/div[2]/div[1]/div[1]/form[1]/button[1]]")).click();
+        Thread.sleep(3000);
+
+
     }
+
+
+//    -----------------------------------------------------
+
+
 
     //@Test(priority = 20)
     public static void Create_Event() throws InterruptedException, AWTException {
