@@ -58,7 +58,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 1)
+    @Test(priority = 1)
     public static void Request_Demo() throws Exception {
         //Request_Demo
         driver.findElement(By.xpath("//body/section[1]/section[1]/div[1]/div[1]/div[1]/a[1]")).click();
@@ -84,21 +84,23 @@ public class Qarto_V2 {
         Thread.sleep(2000);
         //Message
         driver.findElement(By.xpath("//textarea[@id='message']")).click();
-        driver.findElement(By.xpath("//textarea[@id='message']")).sendKeys("We are Redlime Test Team");
+        driver.findElement(By.xpath("//textarea[@id='message']")).sendKeys("We are RL Test Team");
         Thread.sleep(2000);
         //Submit
         driver.findElement(By.xpath("//button[@id='submit-request-demo']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(10000);
-        //CLose_Icon
-        driver.findElement(By.xpath("/html/body/div[4]/a[1]/span")).click();
+        //Close_Icon
+        driver.findElement(By.xpath("/html/body/div[2]/a[1]/span")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(5000);
 
     }
 
-    //@Test(priority = 2)
+    @Test(priority = 2)
     public static void Contact_Us () throws Exception {
-        //Request_Demo
-        driver.findElement(By.xpath("//body/section[1]/section[1]/div[1]/div[1]/div[1]/a[1]")).click();
+        //Contact_Us
+        driver.findElement(By.xpath("//body/section[1]/section[1]/div[1]/div[1]/div[1]/a[2]")).click();
         Thread.sleep(5000);
         //Name
         driver.findElement(By.xpath("//input[@id='name']")).click();
@@ -121,13 +123,15 @@ public class Qarto_V2 {
         Thread.sleep(2000);
         //Message
         driver.findElement(By.xpath("//textarea[@id='message']")).click();
-        driver.findElement(By.xpath("//textarea[@id='message']")).sendKeys("We are Redlime Test Team");
+        driver.findElement(By.xpath("//textarea[@id='message']")).sendKeys("We are RL Test Team");
         Thread.sleep(2000);
         //Submit
         driver.findElement(By.xpath("//button[@id='submit-request-demo']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(10000);
         //CLose_Icon
-        driver.findElement(By.xpath("/html/body/div[4]/a[1]/span")).click();
+        driver.findElement(By.xpath("/html/body/div[2]/a[1]/span")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(5000);
 
     }
