@@ -154,7 +154,7 @@ public class Qarto_V2 {
 
     }
 
-   // @Test(priority = 4)
+    @Test(priority = 4)
     public static void Sidebar_Menu () throws InterruptedException {
         //Sidebar_Menu
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/quarto-sidebar[1]/div[1]/div[1]/a[1]/i[1]")).click();
@@ -213,7 +213,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 5)
+    @Test(priority = 5)
     public static void Give_Kudos() throws InterruptedException {
         //GiveKudos
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[1]/a[1]")).click();
@@ -253,7 +253,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 6)
+    @Test(priority = 6)
     public static void Global_Search() throws InterruptedException, AWTException {
         //Global_Search
         driver.findElement(By.xpath("//div[@class='input-group']//input[@placeholder='Search']")).click();
@@ -266,7 +266,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 7)
+    @Test(priority = 7)
     public static void Article_Claps() throws InterruptedException, AWTException {
         //Claps
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/view-document[1]/section[1]/div[1]/div[2]/document-details[1]/div[3]/div[1]/div[1]/div[1]/a[1]/i[1]")).click();
@@ -277,7 +277,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 8)
+    @Test(priority = 8)
     public static void Article_Bookmark() throws InterruptedException, AWTException {
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/view-document[1]/section[1]/div[1]/div[2]/document-details[1]/div[3]/div[1]/div[1]/div[2]/a[1]/i[1]")).click();
         Thread.sleep(5000);
@@ -285,7 +285,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 9)
+    @Test(priority = 9)
     public static void Article_Assign() throws InterruptedException, AWTException {
         //Assign_User
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/view-document[1]/section[1]/div[1]/div[2]/document-details[1]/div[3]/div[1]/div[1]/div[3]/a[1]/i[1]")).click();
@@ -303,7 +303,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 10)
+    @Test(priority = 10)
     public static void Article_Clean_View() throws InterruptedException, AWTException {
         //Clean_View_Mode
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/view-document[1]/section[1]/div[1]/div[2]/document-details[1]/div[3]/div[1]/div[1]/div[4]/div[1]/i[1]")).click();
@@ -314,7 +314,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 11)
+    @Test(priority = 11)
     public static void Article_helpful() throws InterruptedException, AWTException {
         //Page_Scroll
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,450)", "");
@@ -325,7 +325,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 12)
+    @Test(priority = 12)
     public static void SHARE_LINK() throws InterruptedException, AWTException {
         //Share_Page
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[3]/a[1]/i[1]")).click();
@@ -353,7 +353,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 13)
+    @Test(priority = 13)
     public static void Simple_Document() throws InterruptedException {
         //Create_Simple_Document
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -393,7 +393,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 14)
+    @Test(priority = 14)
     public static void Simple_Document_QUIZ() throws InterruptedException {
         //Create_Simple_Document_QUIZ
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -464,7 +464,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 15)
+    @Test(priority = 15)
     public static void Multi_Sectional_Document() throws InterruptedException {
         //Create_Multi_Document_QUIZ
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -520,7 +520,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 16)
+    @Test(priority = 16)
     public static void Multi_Sectional_Document_QUIZ() throws InterruptedException {
         //Create_Multi_Document_QUIZ
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -602,7 +602,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 17)
+    @Test(priority = 17)
     public static void Visual_Document() throws InterruptedException, AWTException {
         //Create_Visual_Document
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -654,7 +654,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 18)
+    @Test(priority = 18)
     public static void Visual_Document_QUIZ() throws InterruptedException, AWTException {
         //Create_Visual_Document
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -735,7 +735,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 19)
+    @Test(priority = 19)
     public static void Video_Document() throws InterruptedException, AWTException {
         //Create_Video_Document
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -776,7 +776,7 @@ public class Qarto_V2 {
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 20)
+    @Test(priority = 20)
     public static void Video_Document_QUIZ() throws InterruptedException, AWTException {
         //Create_Video_Document__QUIZ
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -846,7 +846,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 21)
+    @Test(priority = 21)
     public static void Upload_Video() throws InterruptedException, AWTException {
         //Create_or_Upload_Video
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -885,7 +885,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 22)
+    @Test(priority = 22)
     public static void Upload_Video_QUIZ() throws InterruptedException, AWTException {
         //Create_or_Upload_Video_QUIZ
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -952,7 +952,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 23)
+    @Test(priority = 23)
     public static void YouTube_Video() throws InterruptedException, AWTException {
         //Create_or_Upload_Video
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -982,7 +982,7 @@ public class Qarto_V2 {
 
     }
 
-    //@Test(priority = 24)
+    @Test(priority = 24)
     public static void YouTube_Video_QUIZ() throws InterruptedException, AWTException {
         //Create_or_Upload_Video
         driver.findElement((By.xpath("//header/nav[1]/div[2]/ul[1]/li[4]/a[1]/i[1]"))).click();
@@ -1227,7 +1227,7 @@ public class Qarto_V2 {
         Thread.sleep(4000);
     }
 
-    //@Test(priority = 28)
+    @Test(priority = 28)
     public static void Create_Forum_Post() throws InterruptedException, AWTException
     {
         //Create_Forum_Post
@@ -1270,7 +1270,7 @@ public class Qarto_V2 {
         Thread.sleep(10000);
       }
 
-    //@Test (priority = 30)
+    @Test (priority = 30)
     public static void Task_Notifications() throws InterruptedException, AWTException{
         //Todo_Notifications
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[6]/a[1]/i[1]")).click();
@@ -1280,7 +1280,7 @@ public class Qarto_V2 {
         Thread.sleep(10000);
     }
 
-    //@Test(priority = 31)
+    @Test(priority = 31)
     public static void Forum_Notifications() throws InterruptedException, AWTException {
         //Forum_Notifications
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[7]/a[1]/i[1]")).click();
@@ -1309,6 +1309,9 @@ public class Qarto_V2 {
         //User_Profile
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[9]/a[1]/img[1]")).click();
         Thread.sleep(2000);
+        //Page_Scroll
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,450)", "");
+        Thread.sleep(5000);
         //My_Account
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[9]/ul[1]/li[2]/a[1]")).click();
         Thread.sleep(2000);
@@ -1324,9 +1327,6 @@ public class Qarto_V2 {
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-user-profile[1]/section[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[2]/div[2]/input[1]")).clear();
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-user-profile[1]/section[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[2]/div[2]/input[1]")).sendKeys("Hossain");
         Thread.sleep(1000);
-        //Page_Scroll
-        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,450)", "");
-        Thread.sleep(5000);
         //Title
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-user-profile[1]/section[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[2]/div[6]/input[1]")).click();
         Thread.sleep(1000);
@@ -1423,13 +1423,14 @@ public class Qarto_V2 {
         Thread.sleep(2000);
         //Date
         driver.findElement(By.xpath("//span[contains(text(),'Date')]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(6000);
         //Explore_Category
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/quarto-sidebar[1]/div[1]/div[2]/ul[1]/li[1]/a[1]/i[1]")).click();
         Thread.sleep(5000);
     }
 
-    //@Test(priority = 35)
+    @Test(priority = 35)
     public static void View_Assignment_Log() throws InterruptedException, AWTException {
         //Profile
         driver.findElement(By.xpath("//header/nav[1]/div[2]/ul[1]/li[9]/a[1]/img[1]")).click();
@@ -1500,7 +1501,8 @@ public class Qarto_V2 {
         Thread.sleep(5000);
         //Send_Button
         driver.findElement(By.xpath("//button[@class='btn btn-secondary']")).click();
-        Thread.sleep(6000);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        Thread.sleep(5000);
         //Explore_Category
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/quarto-sidebar[1]/div[1]/div[2]/ul[1]/li[1]/a[1]/i[1]")).click();
         Thread.sleep(5000);
