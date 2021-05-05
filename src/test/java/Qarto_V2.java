@@ -1100,7 +1100,7 @@ public class Qarto_V2 {
         Thread.sleep(2000);
         //Provide_title
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/announcement-component[1]/section[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/input[1]")).click();
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/announcement-component[1]/section[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys("Test Event");
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/announcement-component[1]/section[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys("Automation Event");
         Thread.sleep(2000);
         //Venue
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/announcement-component[1]/section[1]/div[2]/div[1]/form[1]/div[1]/div[2]/div[1]/input[1]")).click();
@@ -1194,7 +1194,7 @@ public class Qarto_V2 {
         Thread.sleep(2000);
         //Provide_a_title
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/announcement-component[1]/section[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/input[1]")).click();
-        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/announcement-component[1]/section[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys("Create News");
+        driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/announcement-component[1]/section[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys("Automation News");
         Thread.sleep(2000);
         //Text color
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/announcement-component[1]/section[1]/div[2]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]/div[2]/label[1]/span[1]")).click();
