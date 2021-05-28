@@ -30,7 +30,7 @@ public class Qarto_V2 {
         //MyScreenRecorder.stopRecording();
         //Set_the_Driver_location
         //System.setProperty("webdriver.gecko.driver",  "G:\\drivers\\geckodriver.exe");
-        System.setProperty("webdriver.chrome.driver",  "G:\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",  "G:\\drivers\\New folder\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(BaseURL);
@@ -230,7 +230,7 @@ public class Qarto_V2 {
         driver.findElement(By.xpath("//input[@id='user']")).click();
         driver.findElement(By.xpath("//input[@id='user']")).sendKeys("Shahid");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//i[contains(text(),'(sahid@redlimesolutions.com)')]")).click();
+        driver.findElement(By.xpath("//i[contains(text(),'(liveshahid126@gmail.com)')]")).click();
         Thread.sleep(2000);
         //Say_Something_Nice
         driver.findElement(By.xpath("//i[contains(text(),'We are proud of you!')]")).click();
@@ -266,9 +266,9 @@ public class Qarto_V2 {
         //Global_Search
         driver.findElement(By.xpath("//div[@class='input-group']//input[@placeholder='Search']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//div[@class='input-group']//input[@placeholder='Search']")).sendKeys("How much power does patience have?");
+        driver.findElement(By.xpath("//div[@class='input-group']//input[@placeholder='Search']")).sendKeys("What is the most heartbreaking picture you've seen on the internet today?");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//a[contains(text(),'How much power does patience have?')]")).click();
+        driver.findElement(By.xpath("//a[contains(text(),\"What is the most heartbreaking picture you've seen\")]")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//body/root[1]/dashboard-layout[1]/div[1]/perfect-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-search-list[1]/section[1]/div[2]/div[2]/list-card[1]/div[1]/a[1]/div[1]")).click();
         Thread.sleep(5000);
